@@ -13,8 +13,8 @@ import useSound from 'use-sound';
 import sentMusic from "./images/081723_fx-40246.mp3";
 import receiveMusic from "./images/announcement-sound-4-21464.mp3";
 
-// const socket = io.connect("http://chattapp2112144.herokuapp.com", { transports: ['websocket', 'polling', 'flashsocket'] });
-const socket = io.connect("http://localhost:3001", { transports: ['websocket', 'polling', 'flashsocket'] });
+const socket = io.connect("http://advchattapp2112144.herokuapp.com", { transports: ['websocket', 'polling', 'flashsocket'] });
+// const socket = io.connect("http://localhost:3001", { transports: ['websocket', 'polling', 'flashsocket'] });
 
 
 const Home = () => {
