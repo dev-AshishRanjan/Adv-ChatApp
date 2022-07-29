@@ -13,8 +13,8 @@ const storage=[];
 
 const io= new Server(server,{
     cors: {
-        // origin: 'https://chatapp144.netlify.app/',
-        origin: 'https://localhost:3000',
+        origin: 'https://adv-chatapp144.netlify.app/',
+        // origin: 'https://localhost:3000',
         method: ["GET","POST"],
         credentials: true
     },
