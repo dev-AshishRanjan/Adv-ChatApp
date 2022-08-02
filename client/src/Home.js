@@ -35,7 +35,7 @@ const Home = () => {
     const [messageSent,setMessageSent]=useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:3001").then(res => res.json()).then(res_data =>{
+        fetch("https://advchattapp2112144.herokuapp.com").then(res => res.json()).then(res_data =>{
             setBigData(res_data);
             console.log(res_data);
         })
