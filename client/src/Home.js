@@ -13,7 +13,7 @@ import useSound from 'use-sound';
 import sentMusic from "./images/081723_fx-40246.mp3";
 import receiveMusic from "./images/announcement-sound-4-21464.mp3";
 
-const socket = io.connect("https://advchattapp2112144.herokuapp.com", { transports: ['websocket', 'polling', 'flashsocket'] });
+const socket = io.connect("https://adv-chatapp.onrender.com", { transports: ['websocket', 'polling', 'flashsocket'] });
 // const socket = io.connect("http://localhost:3001", { transports: ['websocket', 'polling', 'flashsocket'] });
 
 
@@ -35,7 +35,7 @@ const Home = () => {
     const [messageSent,setMessageSent]=useState([]);
 
     useEffect(()=>{
-        fetch("https://advchattapp2112144.herokuapp.com").then(res => res.json()).then(res_data =>{
+        fetch("https://adv-chatapp.onrender.com").then(res => res.json()).then(res_data =>{
             setBigData(res_data);
             console.log(res_data);
         })
